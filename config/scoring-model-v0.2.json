@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "0.2",
+  "modelId": "season-records-v0.2",
+  "description": "Configurable Franchise Ledger season scoring model.",
+  "components": {
+    "regularSeasonStrength": {
+      "weight": 0.5,
+      "description": "Win percentage scaled to 0-100."
+    },
+    "postseasonBonus": {
+      "weight": 0.25,
+      "description": "Postseason achievement bonus."
+    },
+    "eraAdjustment": {
+      "weight": 0.1,
+      "description": "Placeholder for era/context normalization."
+    },
+    "consistency": {
+      "weight": 0.15,
+      "description": "Placeholder for multi-season organizational consistency."
+    }
+  },
+  "postseasonBonuses": {
+    "postseasonReached": 8,
+    "pennant": 7,
+    "championship": 10
+  },
+  "gradeScale": [
+    { "min": 90, "grade": "A" },
+    { "min": 80, "grade": "B" },
+    { "min": 70, "grade": "C" },
+    { "min": 60, "grade": "D" },
+    { "min": 0, "grade": "F" }
+  ]
+}

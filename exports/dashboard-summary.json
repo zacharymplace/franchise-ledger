@@ -1,0 +1,21 @@
+{
+  "generatedAt": "generated",
+  "dataset": {
+    "source": "example-lahman",
+    "scores": 35,
+    "racePoints": 35,
+    "seasons": 7,
+    "franchises": 5
+  },
+  "reports": {
+    "scoringComparison": "present",
+    "scoringModelDiff": "present"
+  },
+  "leaderSnapshot": {
+    "franchiseId": "lad",
+    "name": "lad",
+    "season": 1900,
+    "compositeScore": null,
+    "grade": "F"
+  }
+}

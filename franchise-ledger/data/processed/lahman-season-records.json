@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "source": "data/raw/lahman/example-Teams.csv",
+  "adapter": "lahman-season-records-adapter",
+  "records": [
+    {
+      "franchiseId": "chc",
+      "season": 1900,
+      "wins": 65,
+      "losses": 75,
+      "winPct": 0.464,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1900,
+      "wins": 66,
+      "losses": 72,
+      "winPct": 0.478,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1900,
+      "wins": 82,
+      "losses": 54,
+      "winPct": 0.603,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1900,
+      "wins": 65,
+      "losses": 75,
+      "winPct": 0.464,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1900,
+      "wins": 0,
+      "losses": 0,
+      "winPct": 0,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1920,
+      "wins": 75,
+      "losses": 79,
+      "winPct": 0.487,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1920,
+      "wins": 62,
+      "losses": 90,
+      "winPct": 0.408,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1920,
+      "wins": 93,
+      "losses": 61,
+      "winPct": 0.604,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1920,
+      "wins": 75,
+      "losses": 79,
+      "winPct": 0.487,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1920,
+      "wins": 95,
+      "losses": 59,
+      "winPct": 0.617,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1940,
+      "wins": 75,
+      "losses": 79,
+      "winPct": 0.487,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1940,
+      "wins": 65,
+      "losses": 87,
+      "winPct": 0.428,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1940,
+      "wins": 88,
+      "losses": 65,
+      "winPct": 0.575,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1940,
+      "wins": 84,
+      "losses": 69,
+      "winPct": 0.549,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1940,
+      "wins": 88,
+      "losses": 66,
+      "winPct": 0.571,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1960,
+      "wins": 60,
+      "losses": 94,
+      "winPct": 0.39,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1960,
+      "wins": 88,
+      "losses": 66,
+      "winPct": 0.571,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1960,
+      "wins": 82,
+      "losses": 72,
+      "winPct": 0.532,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1960,
+      "wins": 86,
+      "losses": 68,
+      "winPct": 0.558,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1960,
+      "wins": 97,
+      "losses": 57,
+      "winPct": 0.63,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": false
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1980,
+      "wins": 64,
+      "losses": 98,
+      "winPct": 0.395,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1980,
+      "wins": 81,
+      "losses": 80,
+      "winPct": 0.503,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1980,
+      "wins": 92,
+      "losses": 71,
+      "winPct": 0.564,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1980,
+      "wins": 74,
+      "losses": 88,
+      "winPct": 0.457,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1980,
+      "wins": 103,
+      "losses": 59,
+      "winPct": 0.636,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "chc",
+      "season": 2000,
+      "wins": 65,
+      "losses": 97,
+      "winPct": 0.401,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 2000,
+      "wins": 95,
+      "losses": 67,
+      "winPct": 0.586,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 2000,
+      "wins": 86,
+      "losses": 76,
+      "winPct": 0.531,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "stl",
+      "season": 2000,
+      "wins": 95,
+      "losses": 67,
+      "winPct": 0.586,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 2000,
+      "wins": 87,
+      "losses": 74,
+      "winPct": 0.54,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": true
+    },
+    {
+      "franchiseId": "chc",
+      "season": 2025,
+      "wins": 88,
+      "losses": 74,
+      "winPct": 0.543,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "atl",
+      "season": 2025,
+      "wins": 90,
+      "losses": 72,
+      "winPct": 0.556,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 2025,
+      "wins": 102,
+      "losses": 60,
+      "winPct": 0.63,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": true
+    },
+    {
+      "franchiseId": "stl",
+      "season": 2025,
+      "wins": 78,
+      "losses": 84,
+      "winPct": 0.481,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 2025,
+      "wins": 94,
+      "losses": 68,
+      "winPct": 0.58,
+      "postseasonReached": false,
+      "pennant": false,
+      "championship": false
+    }
+  ]
+}

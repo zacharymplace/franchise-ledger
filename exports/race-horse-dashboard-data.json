@@ -1,0 +1,366 @@
+{
+  "summary": {
+    "generatedAt": "generated",
+    "source": "exports/lahman-race-timeline.json",
+    "seasons": 7,
+    "franchises": 5,
+    "points": 35,
+    "firstSeason": 1900,
+    "finalSeason": 2025,
+    "maxRank": 5
+  },
+  "finalStandings": [
+    {
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 1,
+      "compositeScore": 55,
+      "position": 5
+    },
+    {
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 2,
+      "compositeScore": 43,
+      "position": 4
+    },
+    {
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 3,
+      "compositeScore": 41,
+      "position": 3
+    },
+    {
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 4,
+      "compositeScore": 40,
+      "position": 2
+    },
+    {
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 5,
+      "compositeScore": 35,
+      "position": 1
+    }
+  ],
+  "trackPoints": [
+    {
+      "season": 1900,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 1,
+      "compositeScore": 51,
+      "position": 5,
+      "label": "Los Angeles Dodgers • 1900 • rank 1"
+    },
+    {
+      "season": 1900,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 2,
+      "compositeScore": 37,
+      "position": 4,
+      "label": "Atlanta Braves • 1900 • rank 2"
+    },
+    {
+      "season": 1900,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 3,
+      "compositeScore": 35,
+      "position": 3,
+      "label": "Chicago Cubs • 1900 • rank 3"
+    },
+    {
+      "season": 1900,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 4,
+      "compositeScore": 35,
+      "position": 2,
+      "label": "St. Louis Cardinals • 1900 • rank 4"
+    },
+    {
+      "season": 1900,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 5,
+      "compositeScore": 1,
+      "position": 1,
+      "label": "New York Yankees • 1900 • rank 5"
+    },
+    {
+      "season": 1920,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 1,
+      "compositeScore": 50,
+      "position": 5,
+      "label": "Los Angeles Dodgers • 1920 • rank 1"
+    },
+    {
+      "season": 1920,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 2,
+      "compositeScore": 46,
+      "position": 4,
+      "label": "New York Yankees • 1920 • rank 2"
+    },
+    {
+      "season": 1920,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 3,
+      "compositeScore": 36,
+      "position": 3,
+      "label": "Chicago Cubs • 1920 • rank 3"
+    },
+    {
+      "season": 1920,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 4,
+      "compositeScore": 36,
+      "position": 2,
+      "label": "St. Louis Cardinals • 1920 • rank 4"
+    },
+    {
+      "season": 1920,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 5,
+      "compositeScore": 30,
+      "position": 1,
+      "label": "Atlanta Braves • 1920 • rank 5"
+    },
+    {
+      "season": 1940,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 1,
+      "compositeScore": 42,
+      "position": 5,
+      "label": "Los Angeles Dodgers • 1940 • rank 1"
+    },
+    {
+      "season": 1940,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 2,
+      "compositeScore": 42,
+      "position": 4,
+      "label": "New York Yankees • 1940 • rank 2"
+    },
+    {
+      "season": 1940,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 3,
+      "compositeScore": 41,
+      "position": 3,
+      "label": "St. Louis Cardinals • 1940 • rank 3"
+    },
+    {
+      "season": 1940,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 4,
+      "compositeScore": 36,
+      "position": 2,
+      "label": "Chicago Cubs • 1940 • rank 4"
+    },
+    {
+      "season": 1940,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 5,
+      "compositeScore": 32,
+      "position": 1,
+      "label": "Atlanta Braves • 1940 • rank 5"
+    },
+    {
+      "season": 1960,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 1,
+      "compositeScore": 52,
+      "position": 5,
+      "label": "New York Yankees • 1960 • rank 1"
+    },
+    {
+      "season": 1960,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 2,
+      "compositeScore": 42,
+      "position": 4,
+      "label": "Atlanta Braves • 1960 • rank 2"
+    },
+    {
+      "season": 1960,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 3,
+      "compositeScore": 41,
+      "position": 3,
+      "label": "St. Louis Cardinals • 1960 • rank 3"
+    },
+    {
+      "season": 1960,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 4,
+      "compositeScore": 39,
+      "position": 2,
+      "label": "Los Angeles Dodgers • 1960 • rank 4"
+    },
+    {
+      "season": 1960,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 5,
+      "compositeScore": 29,
+      "position": 1,
+      "label": "Chicago Cubs • 1960 • rank 5"
+    },
+    {
+      "season": 1980,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 1,
+      "compositeScore": 48,
+      "position": 5,
+      "label": "New York Yankees • 1980 • rank 1"
+    },
+    {
+      "season": 1980,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 2,
+      "compositeScore": 42,
+      "position": 4,
+      "label": "Los Angeles Dodgers • 1980 • rank 2"
+    },
+    {
+      "season": 1980,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 3,
+      "compositeScore": 37,
+      "position": 3,
+      "label": "Atlanta Braves • 1980 • rank 3"
+    },
+    {
+      "season": 1980,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 4,
+      "compositeScore": 34,
+      "position": 2,
+      "label": "St. Louis Cardinals • 1980 • rank 4"
+    },
+    {
+      "season": 1980,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 5,
+      "compositeScore": 30,
+      "position": 1,
+      "label": "Chicago Cubs • 1980 • rank 5"
+    },
+    {
+      "season": 2000,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 1,
+      "compositeScore": 49,
+      "position": 5,
+      "label": "New York Yankees • 2000 • rank 1"
+    },
+    {
+      "season": 2000,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 2,
+      "compositeScore": 44,
+      "position": 4,
+      "label": "Atlanta Braves • 2000 • rank 2"
+    },
+    {
+      "season": 2000,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 3,
+      "compositeScore": 44,
+      "position": 3,
+      "label": "St. Louis Cardinals • 2000 • rank 3"
+    },
+    {
+      "season": 2000,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 4,
+      "compositeScore": 39,
+      "position": 2,
+      "label": "Los Angeles Dodgers • 2000 • rank 4"
+    },
+    {
+      "season": 2000,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 5,
+      "compositeScore": 29,
+      "position": 1,
+      "label": "Chicago Cubs • 2000 • rank 5"
+    },
+    {
+      "season": 2025,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "rank": 1,
+      "compositeScore": 55,
+      "position": 5,
+      "label": "Los Angeles Dodgers • 2025 • rank 1"
+    },
+    {
+      "season": 2025,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "rank": 2,
+      "compositeScore": 43,
+      "position": 4,
+      "label": "New York Yankees • 2025 • rank 2"
+    },
+    {
+      "season": 2025,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "rank": 3,
+      "compositeScore": 41,
+      "position": 3,
+      "label": "Atlanta Braves • 2025 • rank 3"
+    },
+    {
+      "season": 2025,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "rank": 4,
+      "compositeScore": 40,
+      "position": 2,
+      "label": "Chicago Cubs • 2025 • rank 4"
+    },
+    {
+      "season": 2025,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "rank": 5,
+      "compositeScore": 35,
+      "position": 1,
+      "label": "St. Louis Cardinals • 2025 • rank 5"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franchise Ledger Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./polish.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Franchise Ledger</p>
+        <h1>Franchise Ledger Dashboard</h1>
+        <span class="sr-only">Dashboard Scaffold</span>
+        <p class="lede">Operational view for scoring model review, artifact health, replay/diff status, and full dataset confidence.</p>
+      </div>
+      <div class="version-card">
+        <span>Current model</span>
+        <strong>v0.2</strong><small id="dashboard-data-status">JSON-backed</small>
+      </div>
+    </header>
+
+    <section class="executive-strip" aria-label="Executive dashboard summary">
+      <article class="executive-card hero-metric">
+        <span>Current leader</span>
+        <strong id="executive-leader">Loading</strong>
+        <small id="executive-leader-meta">Final-season composite leader</small>
+      </article>
+      <article class="executive-card">
+        <span>Seasons analyzed</span>
+        <strong id="executive-seasons">Loading</strong>
+        <small>Historical scoring window</small>
+      </article>
+      <article class="executive-card">
+        <span>Franchises tracked</span>
+        <strong id="executive-franchises">Loading</strong>
+        <small>Comparable organizations</small>
+      </article>
+      <article class="executive-card">
+        <span>Evidence state</span>
+        <strong>STABLE</strong>
+        <small>Validation + drift guarded</small>
+      </article>
+    </section>
+
+
+    <section class="hero-visual" aria-label="Franchise leader visual summary">
+      <div>
+        <p class="eyebrow">Leader Signal</p>
+        <h2 id="hero-leader-name">Loading</h2>
+        <p id="hero-leader-meta">Final-season leader and rank movement will load from exports.</p>
+      </div>
+      <div class="hero-sparkline" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <section class="insight-grid" aria-label="Executive insights">
+      <article class="insight-card leader">
+        <span>Leader</span>
+        <strong id="insight-top-franchise">Loading</strong>
+        <small id="insight-top-meta">Final-season composite leader</small>
+      </article>
+      <article class="insight-card">
+        <span>Most Volatile</span>
+        <strong id="insight-most-volatile">Loading</strong>
+        <small id="insight-most-volatile-meta">Largest rank swing</small>
+      </article>
+      <article class="insight-card">
+        <span>Coverage</span>
+        <strong id="insight-coverage-count">Loading</strong>
+        <small id="insight-coverage-meta">Scores and race points analyzed</small>
+      </article>
+      <article class="insight-card">
+        <span>Evidence</span>
+        <strong>Guarded</strong>
+        <small>Smoke, validation, snapshot, and drift checks</small>
+      </article>
+    </section>
+
+    <section class="status-grid secondary-status" aria-label="Validation status">
+      <article class="status-card pass"><span>Docs Check</span><strong>PASS</strong></article>
+      <article class="status-card pass"><span>Artifact Check</span><strong>PASS</strong></article>
+      <article class="status-card pass"><span>Drift Check</span><strong>STABLE</strong></article>
+      <article class="status-card manual"><span>Full Lahman</span><strong>MANUAL</strong></article>
+    </section>
+
+    <section class="lifecycle-panel" aria-label="Model lifecycle">
+      <div>
+        <p class="eyebrow">Model Lifecycle</p>
+        <h2>Baseline → Active → Replay Diff → Review → Promote</h2>
+      </div>
+      <ol class="lifecycle-steps">
+        <li><span>1</span><strong>Baseline</strong><small>v0.2 reference</small></li>
+        <li><span>2</span><strong>Active</strong><small>current config</small></li>
+        <li><span>3</span><strong>Replay Diff</strong><small>compare movement</small></li>
+        <li><span>4</span><strong>Review</strong><small>inspect changes</small></li>
+        <li><span>5</span><strong>Promote</strong><small>update baseline</small></li>
+      </ol>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <h2>Scoring Model</h2>
+        <ul>
+          <li>Active config: <code>scoring-model-v0.2.json</code></li>
+          <li>Baseline config: <code>scoring-model-baseline-v0.2.json</code></li>
+          <li>Components: regular season, postseason, era adjustment, consistency</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Replay / Diff</h2>
+        <ul>
+          <li>Largest composite moves</li>
+          <li>Grade changes</li>
+          <li>Baseline vs active comparison</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Generated Artifacts</h2>
+        <ul>
+          <li>Scoring comparison report: <strong id="comparison-report-status">Loading</strong></li>
+          <li>Scoring model diff report: <strong id="diff-report-status">Loading</strong></li>
+          <li>Race timeline exports: <strong id="race-point-count">Loading</strong> points</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Full Dataset Gate</h2>
+        <dl>
+          <div><dt>Scores</dt><dd id="score-count">Loading</dd></div>
+          <div><dt>Seasons</dt><dd id="season-count">Loading</dd></div>
+          <div><dt>Franchises</dt><dd id="franchise-count">Loading</dd></div>
+        </dl>
+      </article>
+
+      <article class="panel">
+        <h2>Current Leader Snapshot</h2>
+        <dl>
+          <div><dt>Top Franchise</dt><dd id="top-franchise">Loading</dd></div>
+          <div><dt>Season</dt><dd id="top-season">Loading</dd></div>
+        </dl>
+      </article>
+    </section>
+  
+    <section class="panel insights-panel" aria-label="Dashboard insights">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Executive Readout</p>
+          <h2>What changed</h2>
+        </div>
+        <span class="pill">Generated from exports</span>
+      </div>
+      <div class="insight-grid">
+        <article>
+          <span class="metric-label">Top franchise</span>
+          <strong id="insight-leader">Loading</strong>
+          <p>Final-season leader based on the active composite scoring model.</p>
+        </article>
+        <article>
+          <span class="metric-label">Coverage</span>
+          <strong id="insight-coverage">Loading</strong>
+          <p>Scored seasons and race points available for dashboard review.</p>
+        </article>
+        <article>
+          <span class="metric-label">Review posture</span>
+          <strong>Evidence-backed</strong>
+          <p>Dashboard evidence packet, validation, and drift guards are wired into repeatable checks.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="panel movement-panel" aria-label="Rank movement and volatility">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Movement Signal</p>
+          <h2>Rank Movement / Volatility</h2>
+        </div>
+        <span class="pill">Season path</span>
+      </div>
+      <p class="panel-copy">Highlights franchises with the widest rank movement across the available timeline.</p>
+      <div id="movement-list" class="movement-list"></div>
+    </section>
+
+
+    <section class="panel storylines-panel" aria-label="Franchise storylines">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Franchise Storylines</p>
+          <h2>What changed</h2>
+        </div>
+        <span class="pill">Generated from race path</span>
+      </div>
+      <div id="franchise-storylines" class="storyline-grid">
+        <article class="storyline-card">
+          <span>Loading</span>
+          <strong>Loading</strong>
+          <small>Storylines will load from dashboard exports.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel race-horse-panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Race Horse View</p>
+          <h2>Franchise Track</h2>
+        </div>
+        <span id="race-horse-status" class="pill">Loading</span>
+      </div>
+
+      <div class="race-horse-summary">
+        <div><span class="metric-label">Final Season</span><strong id="race-final-season">—</strong></div>
+        <div><span class="metric-label">Track Points</span><strong id="race-track-points">—</strong></div>
+        <div><span class="metric-label">Max Rank</span><strong id="race-max-rank">—</strong></div>
+      </div>
+
+      <div id="race-track" class="race-track" aria-label="Race horse franchise standings"></div>
+
+      <aside id="race-marker-detail" class="race-marker-detail" aria-live="polite">
+        <span class="eyebrow">Selected Marker</span>
+        <strong id="race-detail-franchise">Select a marker</strong>
+        <span id="race-detail-meta">Click a race dot to pin season, rank, and score.</span>
+      </aside>
+
+      <ol id="race-final-standings" class="standings-list"></ol>
+    </section>
+
+    <div class="sr-only" aria-hidden="true">
+      <span>storyline-leader</span>
+      <span>storyline-riser</span>
+      <span>storyline-volatility</span>
+    </div>
+
+  
+<section class="dashboard-reading-guide" aria-labelledby="reading-guide-title">
+  <p class="eyebrow">Reading Guide</p>
+  <h2 id="reading-guide-title">How to read this dashboard</h2>
+  <div class="reading-guide-grid">
+    <div>
+      <strong>Leader</strong>
+      <p>The franchise currently setting the pace in the final ranked view.</p>
+    </div>
+    <div>
+      <strong>Track points</strong>
+      <p>The number of season-level points used to shape the race view.</p>
+    </div>
+    <div>
+      <strong>Storylines</strong>
+      <p>Human-readable signals that explain why the standings changed.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+  <script src="./app.js"></script>
+</body>
+</html>

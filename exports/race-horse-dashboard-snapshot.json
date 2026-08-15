@@ -1,0 +1,42 @@
+{
+  "generatedAt": "generated",
+  "source": "exports/race-horse-dashboard-data.json",
+  "leader": "Los Angeles Dodgers",
+  "leaderFranchiseId": "lad",
+  "finalSeason": 2025,
+  "franchiseCount": 5,
+  "pointCount": 35,
+  "maxRank": 5,
+  "finalStandings": [
+    {
+      "rank": 1,
+      "franchiseId": "lad",
+      "displayName": "Los Angeles Dodgers",
+      "compositeScore": 55
+    },
+    {
+      "rank": 2,
+      "franchiseId": "nyy",
+      "displayName": "New York Yankees",
+      "compositeScore": 43
+    },
+    {
+      "rank": 3,
+      "franchiseId": "atl",
+      "displayName": "Atlanta Braves",
+      "compositeScore": 41
+    },
+    {
+      "rank": 4,
+      "franchiseId": "chc",
+      "displayName": "Chicago Cubs",
+      "compositeScore": 40
+    },
+    {
+      "rank": 5,
+      "franchiseId": "stl",
+      "displayName": "St. Louis Cardinals",
+      "compositeScore": 35
+    }
+  ]
+}

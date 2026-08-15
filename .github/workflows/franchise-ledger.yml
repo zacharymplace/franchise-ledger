@@ -1,0 +1,64 @@
+name: Franchise Ledger
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "**"
+      - "package.json"
+      - ".github/workflows/franchise-ledger.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "**"
+      - "package.json"
+      - ".github/workflows/franchise-ledger.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Franchise Ledger docs check
+        run: npm run docs-check
+
+      - name: Run Franchise Ledger check
+        run: npm run check
+
+
+  full-check:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install p7zip
+        run: sudo apt-get update && sudo apt-get install -y p7zip-full
+
+      - name: Download full Lahman data
+        run: npm run download-lahman
+
+      - name: Run Franchise Ledger full check
+        run: npm run full-check

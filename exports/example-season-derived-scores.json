@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "source": "examples/example-season-records.json",
+  "description": "Derived example scores from normalized season records.",
+  "scores": [
+    {
+      "schemaVersion": "0.1",
+      "franchiseId": "nyy",
+      "season": 2025,
+      "inputs": {
+        "wins": 94,
+        "losses": 68,
+        "winPct": 0.58,
+        "postseasonReached": true,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 58,
+        "postseasonBonus": 8
+      },
+      "scores": {
+        "legacy": 65,
+        "current": 66,
+        "momentum": 63,
+        "composite": 65
+      },
+      "grade": "D"
+    },
+    {
+      "schemaVersion": "0.1",
+      "franchiseId": "lad",
+      "season": 2025,
+      "inputs": {
+        "wins": 102,
+        "losses": 60,
+        "winPct": 0.63,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": true
+      },
+      "components": {
+        "regularSeasonStrength": 63,
+        "postseasonBonus": 25
+      },
+      "scores": {
+        "legacy": 82,
+        "current": 88,
+        "momentum": 68,
+        "composite": 82
+      },
+      "grade": "B-"
+    }
+  ]
+}

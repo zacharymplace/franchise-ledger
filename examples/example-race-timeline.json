@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "description": "Illustrative multi-year Franchise Ledger race timeline used to validate racehorse-style visualization data before real historical ingestion.",
+  "metric": "composite",
+  "points": [
+    { "season": 1900, "franchiseId": "chc", "score": 82 },
+    { "season": 1900, "franchiseId": "bos", "score": 78 },
+    { "season": 1900, "franchiseId": "nyy", "score": 22 },
+    { "season": 1900, "franchiseId": "lad", "score": 46 },
+    { "season": 1900, "franchiseId": "stl", "score": 34 },
+
+    { "season": 1920, "franchiseId": "chc", "score": 76 },
+    { "season": 1920, "franchiseId": "bos", "score": 70 },
+    { "season": 1920, "franchiseId": "nyy", "score": 55 },
+    { "season": 1920, "franchiseId": "lad", "score": 48 },
+    { "season": 1920, "franchiseId": "stl", "score": 52 },
+
+    { "season": 1940, "franchiseId": "chc", "score": 68 },
+    { "season": 1940, "franchiseId": "bos", "score": 62 },
+    { "season": 1940, "franchiseId": "nyy", "score": 94 },
+    { "season": 1940, "franchiseId": "lad", "score": 64 },
+    { "season": 1940, "franchiseId": "stl", "score": 82 },
+
+    { "season": 1960, "franchiseId": "chc", "score": 48 },
+    { "season": 1960, "franchiseId": "bos", "score": 54 },
+    { "season": 1960, "franchiseId": "nyy", "score": 98 },
+    { "season": 1960, "franchiseId": "lad", "score": 82 },
+    { "season": 1960, "franchiseId": "stl", "score": 78 },
+
+    { "season": 1980, "franchiseId": "chc", "score": 46 },
+    { "season": 1980, "franchiseId": "bos", "score": 64 },
+    { "season": 1980, "franchiseId": "nyy", "score": 95 },
+    { "season": 1980, "franchiseId": "lad", "score": 88 },
+    { "season": 1980, "franchiseId": "stl", "score": 80 },
+
+    { "season": 2000, "franchiseId": "chc", "score": 52 },
+    { "season": 2000, "franchiseId": "bos", "score": 72 },
+    { "season": 2000, "franchiseId": "nyy", "score": 100 },
+    { "season": 2000, "franchiseId": "lad", "score": 84 },
+    { "season": 2000, "franchiseId": "stl", "score": 84 },
+
+    { "season": 2025, "franchiseId": "chc", "score": 69 },
+    { "season": 2025, "franchiseId": "bos", "score": 82 },
+    { "season": 2025, "franchiseId": "nyy", "score": 91 },
+    { "season": 2025, "franchiseId": "lad", "score": 95 },
+    { "season": 2025, "franchiseId": "stl", "score": 76 }
+  ]
+}

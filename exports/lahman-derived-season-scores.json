@@ -1,0 +1,920 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "source": "data/processed/lahman-season-records.json",
+  "scoringModel": "season-records-v0.2",
+  "scoringConfig": "config/scoring-model-v0.2.json",
+  "description": "Derived Franchise Ledger scores from processed Lahman season records.",
+  "scores": [
+    {
+      "franchiseId": "lad",
+      "season": 1900,
+      "sourceInputs": {
+        "wins": 82,
+        "losses": 54,
+        "winPct": 0.603,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 60,
+        "postseasonBonus": 15,
+        "eraAdjustment": 70,
+        "consistency": 71,
+        "seasonWinPctBaseline": 0.402
+      },
+      "scores": {
+        "legacy": 72,
+        "current": 75,
+        "momentum": 65,
+        "composite": 51
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1900,
+      "sourceInputs": {
+        "wins": 66,
+        "losses": 72,
+        "winPct": 0.478,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 48,
+        "postseasonBonus": 0,
+        "eraAdjustment": 58,
+        "consistency": 46,
+        "seasonWinPctBaseline": 0.402
+      },
+      "scores": {
+        "legacy": 46,
+        "current": 48,
+        "momentum": 43,
+        "composite": 37
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1900,
+      "sourceInputs": {
+        "wins": 65,
+        "losses": 75,
+        "winPct": 0.464,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 46,
+        "postseasonBonus": 0,
+        "eraAdjustment": 56,
+        "consistency": 44,
+        "seasonWinPctBaseline": 0.402
+      },
+      "scores": {
+        "legacy": 44,
+        "current": 46,
+        "momentum": 41,
+        "composite": 35
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1900,
+      "sourceInputs": {
+        "wins": 65,
+        "losses": 75,
+        "winPct": 0.464,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 46,
+        "postseasonBonus": 0,
+        "eraAdjustment": 56,
+        "consistency": 44,
+        "seasonWinPctBaseline": 0.402
+      },
+      "scores": {
+        "legacy": 44,
+        "current": 46,
+        "momentum": 41,
+        "composite": 35
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1900,
+      "sourceInputs": {
+        "wins": 0,
+        "losses": 0,
+        "winPct": 0,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 0,
+        "postseasonBonus": 0,
+        "eraAdjustment": 10,
+        "consistency": 0,
+        "seasonWinPctBaseline": 0.402
+      },
+      "scores": {
+        "legacy": 0,
+        "current": 0,
+        "momentum": 0,
+        "composite": 1
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1920,
+      "sourceInputs": {
+        "wins": 93,
+        "losses": 61,
+        "winPct": 0.604,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 60,
+        "postseasonBonus": 15,
+        "eraAdjustment": 58,
+        "consistency": 71,
+        "seasonWinPctBaseline": 0.521
+      },
+      "scores": {
+        "legacy": 72,
+        "current": 75,
+        "momentum": 65,
+        "composite": 50
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1920,
+      "sourceInputs": {
+        "wins": 95,
+        "losses": 59,
+        "winPct": 0.617,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 62,
+        "postseasonBonus": 0,
+        "eraAdjustment": 60,
+        "consistency": 60,
+        "seasonWinPctBaseline": 0.521
+      },
+      "scores": {
+        "legacy": 61,
+        "current": 62,
+        "momentum": 57,
+        "composite": 46
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1920,
+      "sourceInputs": {
+        "wins": 75,
+        "losses": 79,
+        "winPct": 0.487,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 49,
+        "postseasonBonus": 0,
+        "eraAdjustment": 47,
+        "consistency": 47,
+        "seasonWinPctBaseline": 0.521
+      },
+      "scores": {
+        "legacy": 48,
+        "current": 49,
+        "momentum": 44,
+        "composite": 36
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1920,
+      "sourceInputs": {
+        "wins": 75,
+        "losses": 79,
+        "winPct": 0.487,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 49,
+        "postseasonBonus": 0,
+        "eraAdjustment": 47,
+        "consistency": 47,
+        "seasonWinPctBaseline": 0.521
+      },
+      "scores": {
+        "legacy": 48,
+        "current": 49,
+        "momentum": 44,
+        "composite": 36
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1920,
+      "sourceInputs": {
+        "wins": 62,
+        "losses": 90,
+        "winPct": 0.408,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 41,
+        "postseasonBonus": 0,
+        "eraAdjustment": 39,
+        "consistency": 39,
+        "seasonWinPctBaseline": 0.521
+      },
+      "scores": {
+        "legacy": 40,
+        "current": 41,
+        "momentum": 36,
+        "composite": 30
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1940,
+      "sourceInputs": {
+        "wins": 88,
+        "losses": 65,
+        "winPct": 0.575,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 57,
+        "postseasonBonus": 0,
+        "eraAdjustment": 55,
+        "consistency": 55,
+        "seasonWinPctBaseline": 0.522
+      },
+      "scores": {
+        "legacy": 56,
+        "current": 57,
+        "momentum": 52,
+        "composite": 42
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1940,
+      "sourceInputs": {
+        "wins": 88,
+        "losses": 66,
+        "winPct": 0.571,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 57,
+        "postseasonBonus": 0,
+        "eraAdjustment": 55,
+        "consistency": 55,
+        "seasonWinPctBaseline": 0.522
+      },
+      "scores": {
+        "legacy": 56,
+        "current": 57,
+        "momentum": 52,
+        "composite": 42
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1940,
+      "sourceInputs": {
+        "wins": 84,
+        "losses": 69,
+        "winPct": 0.549,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 55,
+        "postseasonBonus": 0,
+        "eraAdjustment": 53,
+        "consistency": 53,
+        "seasonWinPctBaseline": 0.522
+      },
+      "scores": {
+        "legacy": 54,
+        "current": 55,
+        "momentum": 50,
+        "composite": 41
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1940,
+      "sourceInputs": {
+        "wins": 75,
+        "losses": 79,
+        "winPct": 0.487,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 49,
+        "postseasonBonus": 0,
+        "eraAdjustment": 47,
+        "consistency": 47,
+        "seasonWinPctBaseline": 0.522
+      },
+      "scores": {
+        "legacy": 48,
+        "current": 49,
+        "momentum": 44,
+        "composite": 36
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1940,
+      "sourceInputs": {
+        "wins": 65,
+        "losses": 87,
+        "winPct": 0.428,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 43,
+        "postseasonBonus": 0,
+        "eraAdjustment": 41,
+        "consistency": 41,
+        "seasonWinPctBaseline": 0.522
+      },
+      "scores": {
+        "legacy": 42,
+        "current": 43,
+        "momentum": 38,
+        "composite": 32
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1960,
+      "sourceInputs": {
+        "wins": 97,
+        "losses": 57,
+        "winPct": 0.63,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 63,
+        "postseasonBonus": 15,
+        "eraAdjustment": 59,
+        "consistency": 74,
+        "seasonWinPctBaseline": 0.536
+      },
+      "scores": {
+        "legacy": 75,
+        "current": 78,
+        "momentum": 68,
+        "composite": 52
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1960,
+      "sourceInputs": {
+        "wins": 88,
+        "losses": 66,
+        "winPct": 0.571,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 57,
+        "postseasonBonus": 0,
+        "eraAdjustment": 53,
+        "consistency": 55,
+        "seasonWinPctBaseline": 0.536
+      },
+      "scores": {
+        "legacy": 56,
+        "current": 57,
+        "momentum": 52,
+        "composite": 42
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1960,
+      "sourceInputs": {
+        "wins": 86,
+        "losses": 68,
+        "winPct": 0.558,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 56,
+        "postseasonBonus": 0,
+        "eraAdjustment": 52,
+        "consistency": 54,
+        "seasonWinPctBaseline": 0.536
+      },
+      "scores": {
+        "legacy": 54,
+        "current": 56,
+        "momentum": 51,
+        "composite": 41
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1960,
+      "sourceInputs": {
+        "wins": 82,
+        "losses": 72,
+        "winPct": 0.532,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 53,
+        "postseasonBonus": 0,
+        "eraAdjustment": 50,
+        "consistency": 51,
+        "seasonWinPctBaseline": 0.536
+      },
+      "scores": {
+        "legacy": 51,
+        "current": 53,
+        "momentum": 48,
+        "composite": 39
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1960,
+      "sourceInputs": {
+        "wins": 60,
+        "losses": 94,
+        "winPct": 0.39,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 39,
+        "postseasonBonus": 0,
+        "eraAdjustment": 35,
+        "consistency": 37,
+        "seasonWinPctBaseline": 0.536
+      },
+      "scores": {
+        "legacy": 38,
+        "current": 39,
+        "momentum": 34,
+        "composite": 29
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 1980,
+      "sourceInputs": {
+        "wins": 103,
+        "losses": 59,
+        "winPct": 0.636,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 64,
+        "postseasonBonus": 0,
+        "eraAdjustment": 63,
+        "consistency": 62,
+        "seasonWinPctBaseline": 0.511
+      },
+      "scores": {
+        "legacy": 63,
+        "current": 64,
+        "momentum": 59,
+        "composite": 48
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 1980,
+      "sourceInputs": {
+        "wins": 92,
+        "losses": 71,
+        "winPct": 0.564,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 56,
+        "postseasonBonus": 0,
+        "eraAdjustment": 55,
+        "consistency": 54,
+        "seasonWinPctBaseline": 0.511
+      },
+      "scores": {
+        "legacy": 54,
+        "current": 56,
+        "momentum": 51,
+        "composite": 42
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 1980,
+      "sourceInputs": {
+        "wins": 81,
+        "losses": 80,
+        "winPct": 0.503,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 50,
+        "postseasonBonus": 0,
+        "eraAdjustment": 49,
+        "consistency": 48,
+        "seasonWinPctBaseline": 0.511
+      },
+      "scores": {
+        "legacy": 49,
+        "current": 50,
+        "momentum": 45,
+        "composite": 37
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 1980,
+      "sourceInputs": {
+        "wins": 74,
+        "losses": 88,
+        "winPct": 0.457,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 46,
+        "postseasonBonus": 0,
+        "eraAdjustment": 45,
+        "consistency": 44,
+        "seasonWinPctBaseline": 0.511
+      },
+      "scores": {
+        "legacy": 44,
+        "current": 46,
+        "momentum": 41,
+        "composite": 34
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 1980,
+      "sourceInputs": {
+        "wins": 64,
+        "losses": 98,
+        "winPct": 0.395,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 40,
+        "postseasonBonus": 0,
+        "eraAdjustment": 38,
+        "consistency": 38,
+        "seasonWinPctBaseline": 0.511
+      },
+      "scores": {
+        "legacy": 39,
+        "current": 40,
+        "momentum": 35,
+        "composite": 30
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 2000,
+      "sourceInputs": {
+        "wins": 87,
+        "losses": 74,
+        "winPct": 0.54,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": true
+      },
+      "components": {
+        "regularSeasonStrength": 54,
+        "postseasonBonus": 25,
+        "eraAdjustment": 51,
+        "consistency": 70,
+        "seasonWinPctBaseline": 0.529
+      },
+      "scores": {
+        "legacy": 73,
+        "current": 79,
+        "momentum": 59,
+        "composite": 49
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 2000,
+      "sourceInputs": {
+        "wins": 95,
+        "losses": 67,
+        "winPct": 0.586,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 59,
+        "postseasonBonus": 0,
+        "eraAdjustment": 56,
+        "consistency": 57,
+        "seasonWinPctBaseline": 0.529
+      },
+      "scores": {
+        "legacy": 58,
+        "current": 59,
+        "momentum": 54,
+        "composite": 44
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 2000,
+      "sourceInputs": {
+        "wins": 95,
+        "losses": 67,
+        "winPct": 0.586,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 59,
+        "postseasonBonus": 0,
+        "eraAdjustment": 56,
+        "consistency": 57,
+        "seasonWinPctBaseline": 0.529
+      },
+      "scores": {
+        "legacy": 58,
+        "current": 59,
+        "momentum": 54,
+        "composite": 44
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 2000,
+      "sourceInputs": {
+        "wins": 86,
+        "losses": 76,
+        "winPct": 0.531,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 53,
+        "postseasonBonus": 0,
+        "eraAdjustment": 50,
+        "consistency": 51,
+        "seasonWinPctBaseline": 0.529
+      },
+      "scores": {
+        "legacy": 51,
+        "current": 53,
+        "momentum": 48,
+        "composite": 39
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 2000,
+      "sourceInputs": {
+        "wins": 65,
+        "losses": 97,
+        "winPct": 0.401,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 40,
+        "postseasonBonus": 0,
+        "eraAdjustment": 37,
+        "consistency": 38,
+        "seasonWinPctBaseline": 0.529
+      },
+      "scores": {
+        "legacy": 39,
+        "current": 40,
+        "momentum": 35,
+        "composite": 29
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "lad",
+      "season": 2025,
+      "sourceInputs": {
+        "wins": 102,
+        "losses": 60,
+        "winPct": 0.63,
+        "postseasonReached": true,
+        "pennant": true,
+        "championship": true
+      },
+      "components": {
+        "regularSeasonStrength": 63,
+        "postseasonBonus": 25,
+        "eraAdjustment": 57,
+        "consistency": 79,
+        "seasonWinPctBaseline": 0.558
+      },
+      "scores": {
+        "legacy": 82,
+        "current": 88,
+        "momentum": 68,
+        "composite": 55
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "nyy",
+      "season": 2025,
+      "sourceInputs": {
+        "wins": 94,
+        "losses": 68,
+        "winPct": 0.58,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 58,
+        "postseasonBonus": 0,
+        "eraAdjustment": 52,
+        "consistency": 56,
+        "seasonWinPctBaseline": 0.558
+      },
+      "scores": {
+        "legacy": 56,
+        "current": 58,
+        "momentum": 53,
+        "composite": 43
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "atl",
+      "season": 2025,
+      "sourceInputs": {
+        "wins": 90,
+        "losses": 72,
+        "winPct": 0.556,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 56,
+        "postseasonBonus": 0,
+        "eraAdjustment": 50,
+        "consistency": 54,
+        "seasonWinPctBaseline": 0.558
+      },
+      "scores": {
+        "legacy": 54,
+        "current": 56,
+        "momentum": 51,
+        "composite": 41
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "chc",
+      "season": 2025,
+      "sourceInputs": {
+        "wins": 88,
+        "losses": 74,
+        "winPct": 0.543,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 54,
+        "postseasonBonus": 0,
+        "eraAdjustment": 49,
+        "consistency": 52,
+        "seasonWinPctBaseline": 0.558
+      },
+      "scores": {
+        "legacy": 53,
+        "current": 54,
+        "momentum": 49,
+        "composite": 40
+      },
+      "grade": "F"
+    },
+    {
+      "franchiseId": "stl",
+      "season": 2025,
+      "sourceInputs": {
+        "wins": 78,
+        "losses": 84,
+        "winPct": 0.481,
+        "postseasonReached": false,
+        "pennant": false,
+        "championship": false
+      },
+      "components": {
+        "regularSeasonStrength": 48,
+        "postseasonBonus": 0,
+        "eraAdjustment": 42,
+        "consistency": 46,
+        "seasonWinPctBaseline": 0.558
+      },
+      "scores": {
+        "legacy": 46,
+        "current": 48,
+        "momentum": 43,
+        "composite": 35
+      },
+      "grade": "F"
+    }
+  ]
+}

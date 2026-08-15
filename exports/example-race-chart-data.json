@@ -1,0 +1,435 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "source": "examples/example-race-timeline.json",
+  "chartType": "race-timeline",
+  "metric": "composite",
+  "seasons": [
+    1900,
+    1920,
+    1940,
+    1960,
+    1980,
+    2000,
+    2025
+  ],
+  "series": [
+    {
+      "franchiseId": "bos",
+      "name": "Boston Red Sox",
+      "points": [
+        {
+          "season": 1900,
+          "score": 78
+        },
+        {
+          "season": 1920,
+          "score": 70
+        },
+        {
+          "season": 1940,
+          "score": 62
+        },
+        {
+          "season": 1960,
+          "score": 54
+        },
+        {
+          "season": 1980,
+          "score": 64
+        },
+        {
+          "season": 2000,
+          "score": 72
+        },
+        {
+          "season": 2025,
+          "score": 82
+        }
+      ]
+    },
+    {
+      "franchiseId": "chc",
+      "name": "Chicago Cubs",
+      "points": [
+        {
+          "season": 1900,
+          "score": 82
+        },
+        {
+          "season": 1920,
+          "score": 76
+        },
+        {
+          "season": 1940,
+          "score": 68
+        },
+        {
+          "season": 1960,
+          "score": 48
+        },
+        {
+          "season": 1980,
+          "score": 46
+        },
+        {
+          "season": 2000,
+          "score": 52
+        },
+        {
+          "season": 2025,
+          "score": 69
+        }
+      ]
+    },
+    {
+      "franchiseId": "lad",
+      "name": "Los Angeles Dodgers",
+      "points": [
+        {
+          "season": 1900,
+          "score": 46
+        },
+        {
+          "season": 1920,
+          "score": 48
+        },
+        {
+          "season": 1940,
+          "score": 64
+        },
+        {
+          "season": 1960,
+          "score": 82
+        },
+        {
+          "season": 1980,
+          "score": 88
+        },
+        {
+          "season": 2000,
+          "score": 84
+        },
+        {
+          "season": 2025,
+          "score": 95
+        }
+      ]
+    },
+    {
+      "franchiseId": "nyy",
+      "name": "New York Yankees",
+      "points": [
+        {
+          "season": 1900,
+          "score": 22
+        },
+        {
+          "season": 1920,
+          "score": 55
+        },
+        {
+          "season": 1940,
+          "score": 94
+        },
+        {
+          "season": 1960,
+          "score": 98
+        },
+        {
+          "season": 1980,
+          "score": 95
+        },
+        {
+          "season": 2000,
+          "score": 100
+        },
+        {
+          "season": 2025,
+          "score": 91
+        }
+      ]
+    },
+    {
+      "franchiseId": "stl",
+      "name": "St. Louis Cardinals",
+      "points": [
+        {
+          "season": 1900,
+          "score": 34
+        },
+        {
+          "season": 1920,
+          "score": 52
+        },
+        {
+          "season": 1940,
+          "score": 82
+        },
+        {
+          "season": 1960,
+          "score": 78
+        },
+        {
+          "season": 1980,
+          "score": 80
+        },
+        {
+          "season": 2000,
+          "score": 84
+        },
+        {
+          "season": 2025,
+          "score": 76
+        }
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "season": 1900,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 82
+        },
+        {
+          "rank": 2,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 78
+        },
+        {
+          "rank": 3,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 46
+        },
+        {
+          "rank": 4,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 34
+        },
+        {
+          "rank": 5,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "season": 1920,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 76
+        },
+        {
+          "rank": 2,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 70
+        },
+        {
+          "rank": 3,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 55
+        },
+        {
+          "rank": 4,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 52
+        },
+        {
+          "rank": 5,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "season": 1940,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 94
+        },
+        {
+          "rank": 2,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 82
+        },
+        {
+          "rank": 3,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 68
+        },
+        {
+          "rank": 4,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 64
+        },
+        {
+          "rank": 5,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 62
+        }
+      ]
+    },
+    {
+      "season": 1960,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 98
+        },
+        {
+          "rank": 2,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 82
+        },
+        {
+          "rank": 3,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 78
+        },
+        {
+          "rank": 4,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 54
+        },
+        {
+          "rank": 5,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "season": 1980,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 95
+        },
+        {
+          "rank": 2,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 88
+        },
+        {
+          "rank": 3,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 80
+        },
+        {
+          "rank": 4,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 64
+        },
+        {
+          "rank": 5,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 46
+        }
+      ]
+    },
+    {
+      "season": 2000,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 100
+        },
+        {
+          "rank": 2,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 84
+        },
+        {
+          "rank": 3,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 84
+        },
+        {
+          "rank": 4,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 72
+        },
+        {
+          "rank": 5,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "season": 2025,
+      "standings": [
+        {
+          "rank": 1,
+          "franchiseId": "lad",
+          "name": "Los Angeles Dodgers",
+          "score": 95
+        },
+        {
+          "rank": 2,
+          "franchiseId": "nyy",
+          "name": "New York Yankees",
+          "score": 91
+        },
+        {
+          "rank": 3,
+          "franchiseId": "bos",
+          "name": "Boston Red Sox",
+          "score": 82
+        },
+        {
+          "rank": 4,
+          "franchiseId": "stl",
+          "name": "St. Louis Cardinals",
+          "score": 76
+        },
+        {
+          "rank": 5,
+          "franchiseId": "chc",
+          "name": "Chicago Cubs",
+          "score": 69
+        }
+      ]
+    }
+  ]
+}

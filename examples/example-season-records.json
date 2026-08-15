@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1",
+  "records": [
+    {
+      "franchiseId": "nyy",
+      "season": 2025,
+      "wins": 94,
+      "losses": 68,
+      "winPct": 0.580,
+      "postseasonReached": true,
+      "pennant": false,
+      "championship": false
+    },
+    {
+      "franchiseId": "lad",
+      "season": 2025,
+      "wins": 102,
+      "losses": 60,
+      "winPct": 0.630,
+      "postseasonReached": true,
+      "pennant": true,
+      "championship": true
+    }
+  ]
+}

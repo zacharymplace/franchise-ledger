@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "season": 2025,
+  "description": "Illustrative annual Franchise Ledger scores used to validate report generation before real data ingestion.",
+  "scores": [
+    {
+      "franchiseId": "nyy",
+      "legacy": 100,
+      "current": 82,
+      "momentum": 70,
+      "composite": 91,
+      "grade": "A+",
+      "drivers": {
+        "positive": ["Highest all-time championship baseline", "Durable national brand", "Long record of contention"],
+        "negative": ["Modern title conversion has lagged historical standard"]
+      }
+    },
+    {
+      "franchiseId": "lad",
+      "legacy": 96,
+      "current": 96,
+      "momentum": 90,
+      "composite": 95,
+      "grade": "A+",
+      "drivers": {
+        "positive": ["Elite modern operating model", "Sustained contention", "High player-development and acquisition capacity"],
+        "negative": ["Large-market resource advantage complicates efficiency comparisons"]
+      }
+    },
+    {
+      "franchiseId": "stl",
+      "legacy": 88,
+      "current": 62,
+      "momentum": 52,
+      "composite": 76,
+      "grade": "B+",
+      "drivers": {
+        "positive": ["Strong historical consistency", "Deep franchise identity", "High legacy achievement"],
+        "negative": ["Recent organizational drift", "Current competitive position trails historical standard"]
+      }
+    },
+    {
+      "franchiseId": "chc",
+      "legacy": 72,
+      "current": 68,
+      "momentum": 64,
+      "composite": 69,
+      "grade": "B",
+      "drivers": {
+        "positive": ["Strong historical brand and fan base", "Modern championship reset", "Improved development pipeline"],
+        "negative": ["Inconsistent sustained contention across eras", "Long drought reduced all-time efficiency"]
+      }
+    },
+    {
+      "franchiseId": "sea",
+      "legacy": 48,
+      "current": 70,
+      "momentum": 68,
+      "composite": 58,
+      "grade": "C+",
+      "drivers": {
+        "positive": ["Improving current baseball operation", "Strong fan base", "Recent pitching-development strength"],
+        "negative": ["No World Series appearance", "Thin legacy achievement compared with older franchises"]
+      }
+    },
+    {
+      "franchiseId": "col",
+      "legacy": 34,
+      "current": 30,
+      "momentum": 24,
+      "composite": 31,
+      "grade": "D",
+      "drivers": {
+        "positive": ["Distinct home-market identity", "Some memorable peak seasons"],
+        "negative": ["Weak long-term competitive record", "Limited postseason achievement", "Persistent strategic concerns"]
+      }
+    }
+  ]
+}

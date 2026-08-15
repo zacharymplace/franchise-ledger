@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "franchiseId": "chc",
+  "season": 2025,
+  "scores": {
+    "legacy": 72,
+    "current": 68,
+    "momentum": 64,
+    "composite": 69
+  },
+  "grade": "B",
+  "drivers": {
+    "positive": [
+      "Strong historical brand and fan base",
+      "Multiple modern competitive windows",
+      "Improved development pipeline"
+    ],
+    "negative": [
+      "Long championship drought reduces all-time efficiency",
+      "Inconsistent sustained contention across eras"
+    ]
+  },
+  "movement": {
+    "previousComposite": 67,
+    "delta": 2,
+    "direction": "up"
+  },
+  "confidence": "medium",
+  "analystOverlay": {
+    "adjustment": 1,
+    "reason": "Small positive adjustment for durable cultural weight and recent organizational stabilization."
+  }
+}

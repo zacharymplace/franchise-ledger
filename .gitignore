@@ -1,0 +1,8 @@
+node_modules/
+data/raw/lahman/full/Teams.csv
+data/raw/lahman/full/*.7z
+data/raw/lahman/full/extract/
+data/processed/full/
+exports/full/
+reports/full/
+.DS_Store
