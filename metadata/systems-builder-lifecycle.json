@@ -1,0 +1,55 @@
+{
+  "schema_version": "systems-builder-lifecycle-v1",
+  "system_id": "franchise-ledger",
+  "display_name": "Franchise Ledger",
+  "phase": "operate",
+  "condition": "held",
+  "source": {
+    "repository": "zacharymplace/franchise-ledger",
+    "path": ".",
+    "branch": "main",
+    "commit": "4aa5064"
+  },
+  "evidence": [
+    {
+      "kind": "validation",
+      "reference": "npm run check",
+      "result": "pass"
+    },
+    {
+      "kind": "scoring-model-diff",
+      "reference": "reports/scoring-model-diff-report.md",
+      "result": "35 compared scores; 0 changed scores"
+    },
+    {
+      "kind": "dashboard-evidence",
+      "reference": "reports/dashboard-evidence-packet.md",
+      "result": "Ready"
+    },
+    {
+      "kind": "artifact-drift",
+      "reference": "npm run check",
+      "result": "generated artifacts, dashboard snapshot, evidence packet, and visual snapshot stable"
+    }
+  ],
+  "next_action": {
+    "description": "Hold Franchise Ledger as the validated historical franchise-scoring, Lahman ingestion, model-review, and dashboard-evidence system. Resume development only when a concrete scoring-model revision, additional data phase, new sport, or presentation objective is explicitly adopted."
+  },
+  "blockers": [],
+  "capabilities": [
+    "historical-franchise-scoring",
+    "legacy-current-momentum-indexes",
+    "lahman-ingestion",
+    "season-score-generation",
+    "race-timeline-generation",
+    "scoring-model-config",
+    "scoring-model-replay-and-diff",
+    "baseline-promotion-governance",
+    "dashboard-summary",
+    "race-horse-dashboard",
+    "dashboard-evidence-packet",
+    "dashboard-visual-snapshot",
+    "artifact-drift-detection",
+    "full-lahman-verification"
+  ]
+}
