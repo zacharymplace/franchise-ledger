@@ -32,6 +32,7 @@
       "result": "generated artifacts, dashboard snapshot, evidence packet, and visual snapshot stable"
     }
   ],
+  "last_verified_at": "2026-08-23T22:50:15Z",
   "next_action": {
     "description": "Hold Franchise Ledger as the validated historical franchise-scoring, Lahman ingestion, model-review, and dashboard-evidence system. Resume development only when a concrete scoring-model revision, additional data phase, new sport, or presentation objective is explicitly adopted."
   },
