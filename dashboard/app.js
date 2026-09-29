@@ -52,11 +52,11 @@ function formatNumber(value) {
 
 
 const FRANCHISE_META = {
-  lad: { name: "Los Angeles Dodgers", color: "#f7d774" },
-  nya: { name: "New York Yankees", color: "#7dd3fc" },
-  atl: { name: "Atlanta Braves", color: "#fca5a5" },
-  chc: { name: "Chicago Cubs", color: "#93c5fd" },
-  sln: { name: "St. Louis Cardinals", color: "#f87171" }
+  lad: { name: "Los Angeles Dodgers", color: "var(--data)" },
+  nya: { name: "New York Yankees", color: "var(--data)" },
+  atl: { name: "Atlanta Braves", color: "var(--data)" },
+  chc: { name: "Chicago Cubs", color: "var(--data)" },
+  sln: { name: "St. Louis Cardinals", color: "var(--data)" }
 };
 
 function franchiseIdFor(item) {
@@ -69,7 +69,7 @@ function displayNameFor(item) {
 }
 
 function franchiseColorFor(item) {
-  return FRANCHISE_META[franchiseIdFor(item)]?.color || "#f7d774";
+  return FRANCHISE_META[franchiseIdFor(item)]?.color || "var(--data)";
 }
 
 function rankMovementSummary(data) {
@@ -108,16 +108,16 @@ function rankMovementSummary(data) {
 }
 
 const FRANCHISE_COLORS = {
-  CHC: "#3f7cff",
-  STL: "#d84a4a",
-  LAD: "#6aa6ff",
-  NYY: "#9aa7bd",
-  BOS: "#c94f5d"
+  CHC: "var(--data)",
+  STL: "var(--data)",
+  LAD: "var(--data)",
+  NYY: "var(--data)",
+  BOS: "var(--data)"
 };
 
 function franchiseColorFor(item) {
   const id = String(item?.franchiseId || item?.id || item?.teamId || "").toUpperCase();
-  return FRANCHISE_COLORS[id] || "var(--gold)";
+  return FRANCHISE_COLORS[id] || "var(--data)";
 }
 
 function rankDirectionClass(delta) {

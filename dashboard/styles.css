@@ -1,30 +1,34 @@
+@import url("./house-style.css");
+
 :root {
-  color-scheme: dark;
-  --bg: #090b10;
-  --bg-soft: #10141d;
-  --panel: rgba(22, 27, 38, 0.92);
-  --panel-2: rgba(28, 34, 47, 0.96);
-  --surface: #202838;
-  --surface-muted: #151b27;
-  --text: #f7f4ea;
-  --muted: #aeb6c7;
-  --line: rgba(255,255,255,0.12);
-  --border: rgba(255,255,255,0.12);
-  --gold: #f7d774;
-  --green: #9ee493;
-  --blue: #88b8ff;
-  --red: #ff7b7b;
+  --bg: var(--paper);
+  --bg-soft: var(--paper-2);
+  --panel: var(--paper);
+  --panel-2: var(--paper-2);
+  --surface: var(--paper-2);
+  --surface-muted: var(--paper-2);
+  --text: var(--ink);
+  --muted: var(--ink-muted);
+  --line: var(--rule-strong);
+  --gold: var(--spot);
+  --green: var(--data);
+  --blue: var(--data);
+  --red: var(--ink);
+  --pass: var(--data);
+  --manual: var(--ink);
+  --on-spot: #fff;
+  color-scheme: light;
 }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --on-spot: var(--paper); color-scheme: dark; }
+}
+:root[data-theme="dark"] { --on-spot: var(--paper); color-scheme: dark; }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(247, 215, 116, 0.16), transparent 34rem),
-    radial-gradient(circle at 80% 10%, rgba(136, 184, 255, 0.12), transparent 32rem),
-    linear-gradient(180deg, #080a0f 0%, var(--bg) 55%, #0d1118 100%);
+  font-family: var(--font-body);
   color: var(--text);
 }
 
@@ -47,20 +51,18 @@ body {
 .status-card,
 .panel,
 .lifecycle-panel {
-  border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
-  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
-  backdrop-filter: blur(14px);
+  border: 1.5px solid var(--line);
+  background: var(--paper-2);
 }
 
 .hero > div:first-child {
-  border-radius: 28px;
+  border-radius: 0;
   padding: 32px;
 }
 
 .eyebrow {
   margin: 0 0 8px;
-  color: var(--gold);
+  color: var(--ink);
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.72rem;
@@ -73,12 +75,9 @@ h1 {
   font-size: clamp(2.4rem, 6vw, 5.4rem);
   line-height: 0.94;
   margin-bottom: 18px;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.02em;
 }
 
-h2 {
-  letter-spacing: -0.025em;
-}
 
 .lede {
   color: var(--muted);
@@ -89,7 +88,7 @@ h2 {
 }
 
 .version-card {
-  border-radius: 28px;
+  border-radius: 0;
   padding: 24px;
   display: grid;
   align-content: space-between;
@@ -116,11 +115,11 @@ h2 {
   display: inline-flex;
   width: fit-content;
   align-items: center;
-  border: 1px solid rgba(158, 228, 147, 0.35);
-  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 6px 10px;
   color: var(--green);
-  background: rgba(158, 228, 147, 0.08);
+  background: var(--paper-2);
   font-weight: 700;
   font-size: 0.76rem;
 }
@@ -133,7 +132,7 @@ h2 {
 }
 
 .status-card {
-  border-radius: 20px;
+  border-radius: 0;
   padding: 18px;
 }
 
@@ -143,10 +142,10 @@ h2 {
 }
 
 .status-card.pass strong { color: var(--green); }
-.status-card.manual strong { color: var(--gold); }
+.status-card.manual strong { color: var(--ink); text-decoration: underline dashed; text-underline-offset: 3px; }
 
 .lifecycle-panel {
-  border-radius: 26px;
+  border-radius: 0;
   padding: 26px;
   margin-bottom: 22px;
 }
@@ -163,9 +162,9 @@ h2 {
 }
 
 .lifecycle-steps li {
-  border: 1px solid var(--line);
-  background: rgba(0,0,0,0.18);
-  border-radius: 18px;
+  border: 1.5px solid var(--line);
+  background: var(--paper-2);
+  border-radius: 0;
   padding: 16px;
   margin: 0;
   color: var(--muted);
@@ -176,9 +175,9 @@ h2 {
   place-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--gold), #d5a944);
-  color: #171307;
+  border-radius: 0;
+  background: var(--paper-2);
+  color: var(--on-spot);
   font-weight: 900;
   margin-bottom: 12px;
 }
@@ -196,7 +195,7 @@ h2 {
 }
 
 .panel {
-  border-radius: 24px;
+  border-radius: 0;
   padding: 24px;
   background: var(--panel-2);
 }
@@ -215,9 +214,9 @@ li {
 
 code {
   color: var(--text);
-  background: rgba(255,255,255,0.08);
+  background: var(--paper-3);
   padding: 0.15rem 0.35rem;
-  border-radius: 0.35rem;
+  border-radius: 0;
 }
 
 dl {
@@ -256,10 +255,10 @@ dd {
 
 .race-horse-summary > div,
 .race-marker-detail {
-  border: 1px solid var(--border);
-  border-radius: 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1rem;
-  background: rgba(0,0,0,0.2);
+  background: var(--paper-2);
 }
 
 .race-horse-summary strong {
@@ -271,11 +270,9 @@ dd {
 .race-track {
   margin-block: 1rem;
   overflow-x: auto;
-  border: 1px solid var(--border);
-  border-radius: 1.2rem;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)),
-    rgba(0,0,0,0.2);
+  border: 1.5px solid var(--line);
+  border-radius: 0;
+  background: var(--paper-2);
 }
 
 .race-svg {
@@ -286,14 +283,14 @@ dd {
 }
 
 .race-tick {
-  stroke: rgba(255,255,255,0.09);
+  stroke: var(--rule);
   stroke-width: 1;
 }
 
 .race-lane {
-  stroke: rgba(255,255,255,0.17);
+  stroke: var(--rule);
   stroke-width: 12;
-  stroke-linecap: round;
+  stroke-linecap: butt;
 }
 
 .race-label {
@@ -304,7 +301,7 @@ dd {
 
 .race-dot {
   fill: var(--blue);
-  stroke: rgba(255,255,255,0.7);
+  stroke: var(--paper);
   stroke-width: 1.5;
   cursor: pointer;
 }
@@ -317,7 +314,7 @@ dd {
 
 .race-dot-final {
   fill: var(--gold);
-  stroke: #fff3c4;
+  stroke: var(--ink);
   stroke-width: 2;
 }
 
@@ -348,15 +345,15 @@ dd {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: 0.9rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 0.8rem;
-  background: rgba(0,0,0,0.18);
+  background: var(--paper-2);
   margin: 0;
 }
 
 .standings-list strong {
-  color: var(--gold);
+  color: var(--ink);
 }
 
 @media (max-width: 900px) {
@@ -393,13 +390,10 @@ dd {
 }
 
 .executive-card {
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1.15rem;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
-    var(--panel-2);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+  background: var(--panel-2);
 }
 
 .executive-card span,
@@ -426,10 +420,7 @@ dd {
 }
 
 .hero-metric {
-  background:
-    radial-gradient(circle at top left, rgba(247, 215, 116, 0.18), transparent 36rem),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    var(--panel-2);
+  background: var(--panel-2);
 }
 
 .insights-panel {
@@ -443,10 +434,10 @@ dd {
 }
 
 .insight-grid article {
-  border: 1px solid var(--line);
-  border-radius: 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--paper-2);
 }
 
 .insight-grid strong {
@@ -488,10 +479,10 @@ dd {
   grid-template-columns: minmax(10rem, 16rem) minmax(8rem, 1fr) auto;
   gap: 1rem;
   align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 0.9rem;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--paper-2);
 }
 
 .movement-name {
@@ -501,16 +492,16 @@ dd {
 .movement-track {
   position: relative;
   height: 0.65rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  background: var(--paper-3);
   overflow: hidden;
 }
 
 .movement-fill {
   display: block;
   height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--gold), var(--pass));
+  border-radius: 0;
+  background: var(--paper-2);
 }
 
 .movement-meta {
@@ -535,19 +526,17 @@ dd {
   grid-template-columns: minmax(0, 1fr) 280px;
   align-items: end;
   gap: 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  background:
-    radial-gradient(circle at 15% 0%, rgba(247, 215, 116, 0.16), transparent 34%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
+  background: var(--paper-2);
 }
 
 .hero-visual h2 {
   margin-bottom: 0.35rem;
   font-size: clamp(2rem, 5vw, 4.5rem);
-  letter-spacing: -0.06em;
+  letter-spacing: -0.02em;
 }
 
 .hero-visual p:last-child {
@@ -562,16 +551,16 @@ dd {
   height: 8rem;
   gap: 0.75rem;
   padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: rgba(0, 0, 0, 0.18);
+  border: 1.5px solid var(--line);
+  border-radius: 0;
+  background: var(--paper-2);
 }
 
 .hero-sparkline span {
   width: 100%;
   min-height: 1.5rem;
-  border-radius: 999px 999px 0.35rem 0.35rem;
-  background: linear-gradient(180deg, var(--gold), rgba(247, 215, 116, 0.18));
+  border-radius: 0;
+  background: var(--paper-2);
 }
 
 .hero-sparkline span:nth-child(1) { height: 38%; }
@@ -610,19 +599,14 @@ dd {
 }
 
 .insight-card {
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1.1rem;
-  background:
-    radial-gradient(circle at top left, rgba(247, 215, 116, 0.12), transparent 35%),
-    var(--panel);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+  background: var(--panel-2);
 }
 
 .insight-card.leader {
-  background:
-    linear-gradient(135deg, rgba(247, 215, 116, 0.18), transparent 45%),
-    var(--panel-2);
+  background: var(--panel-2);
 }
 
 .insight-card span,
@@ -664,7 +648,7 @@ dd {
   font-size: 0.72rem;
   font-weight: 800;
   paint-order: stroke;
-  stroke: rgba(10, 12, 18, 0.92);
+  stroke: var(--paper);
   stroke-width: 4px;
   stroke-linejoin: round;
 }
@@ -700,17 +684,15 @@ dd {
 }
 
 .storyline-card {
-  border: 1px solid var(--line);
-  border-radius: 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0;
   padding: 1rem;
-  background:
-    radial-gradient(circle at top left, rgba(247, 215, 116, 0.14), transparent 45%),
-    rgba(255, 255, 255, 0.035);
+  background: var(--paper-2);
 }
 
 .storyline-card span {
   display: block;
-  color: var(--gold);
+  color: var(--ink);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.72rem;
@@ -760,7 +742,7 @@ dd {
 
 .movement-fill,
 .movement-track span {
-  background: linear-gradient(90deg, var(--franchise-color, var(--gold)), rgba(255, 255, 255, 0.22));
+  background: var(--franchise-color, var(--gold));
 }
 
 .race-season-path {
@@ -772,3 +754,27 @@ dd {
 .race-franchise-label {
   fill: var(--franchise-color, var(--muted));
 }
+
+/* House style: printed-object look. */
+.hero > div:first-child, .version-card, .status-card, .panel, .lifecycle-panel { border-width: 2px; }
+.version-card strong, .status-card strong, .executive-card strong, .insight-card strong, .storyline-card strong,
+.race-horse-summary strong, .insight-grid strong, dd, .movement-meta, .standings-list strong { font-family: var(--font-mono); }
+.eyebrow, dt, .metric-label, .executive-card span, .insight-card span, .storyline-card span,
+.version-card span, .status-card span, .race-label, .rank-badge, .season-trail-label { font-family: var(--font-mono); }
+.status-card.pass { border-style: solid; }
+.status-card.manual { border-style: dashed; }
+.pill { font-family: var(--font-mono); text-transform: uppercase; }
+.race-dot.race-dot-final { fill: var(--spot); stroke: var(--ink); }
+.race-dot:hover, .race-dot:focus { fill: var(--ink); }
+.race-dot:focus-visible { outline: 2px solid var(--spot); outline-offset: 3px; }
+.rank-badge-down { text-decoration: underline; }
+.lifecycle-steps span { border: 1.5px solid var(--line); font-family: var(--font-display); }
+.movement-track { border: 1.5px solid var(--line); height: 0.8rem; }
+.hero-sparkline span { background: var(--spot); border: 1.5px solid var(--line); }
+.hero-sparkline span:nth-child(odd) { background: var(--paper-2); }
+.storyline-card, .insight-card, .executive-card { border-width: 1.5px; }
+.insight-card.leader, .hero-metric { border-style: double; border-width: 4px; }
+code { border: 1.5px solid var(--rule); background: var(--paper-2); }
+.race-track { overflow-x: auto; max-width: 100%; }
+.hero > *, .panel-grid > *, .executive-strip > *, .insight-grid > *, .storyline-grid > *, .movement-row > * { min-width: 0; }
+.movement-name, .storyline-card strong, .executive-card strong { overflow-wrap: anywhere; }
